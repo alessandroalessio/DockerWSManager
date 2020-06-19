@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "DockerManager\\" : "app/DockerManager"
+        }
+    },
+    "require": {
+        "php" : "^7.0",
+        "vlucas/phpdotenv": "^4.1"
+    }
+}
