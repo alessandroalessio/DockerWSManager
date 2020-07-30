@@ -24,42 +24,48 @@ $DB = New Database();
                     <input type="text" class="form-control" name="website_address" id="website_address" placeholder="Enter website address">
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="download_wordpress" id="download_wordpress" value="on">
-                    <label for="download_wordpress" class="form-check-label mb-3">Download Wordpress?</label>
+                    <input type="checkbox" class="form-check-input" name="is_wordpress" id="is_wordpress" value="on" onclick="$('#wordpress-block').toggle();">
+                    <label for="is_wordpress" class="form-check-label mb-3">Is Wordpress?</label>
                 </div>
-                <div class="form-group">
-                    <label for="db_name">Database name <small>(for Worpress only)</small></label>
-                    <input type="text" class="form-control" name="db_name" id="db_name" placeholder="Enter database name">
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                  <h5>Plugins <small>(for Wordpress only)</small></h5>
+                <div id="wordpress-block" style="display: none">
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="download_wordpress" id="download_wordpress" value="on">
+                      <label for="download_wordpress" class="form-check-label mb-3">Download Wordpress?</label>
                   </div>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="on" id="contact_form7">
-                  <label class="form-check-label" for="contact_form7">
-                    Install Contact Form 7
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="on" id="flamingo">
-                  <label class="form-check-label" for="flamingo">
-                    Install Flamingo
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="on" id="classic-editor">
-                  <label class="form-check-label" for="classic-editor">
-                    Install Classic Editor
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="on" id="all-in-one-seo-pack">
-                  <label class="form-check-label" for="all-in-one-seo-pack">
-                    Install All in One SEO
-                  </label>
-                </div>
+                  <div class="form-group">
+                      <label for="db_name">Database name <small>(for Worpress only)</small></label>
+                      <input type="text" class="form-control" name="db_name" id="db_name" placeholder="Enter database name">
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                    <h5>Plugins <small>(for Wordpress only)</small></h5>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="on" id="contact_form7">
+                    <label class="form-check-label" for="contact_form7">
+                      Install Contact Form 7
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="on" id="flamingo">
+                    <label class="form-check-label" for="flamingo">
+                      Install Flamingo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="on" id="classic-editor">
+                    <label class="form-check-label" for="classic-editor">
+                      Install Classic Editor
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="on" id="all-in-one-seo-pack">
+                    <label class="form-check-label" for="all-in-one-seo-pack">
+                      Install All in One SEO
+                    </label>
+                  </div>
+                </div><!-- /#wordpress-block -->
                 <button type="submit" class="btn btn-primary mt-3">Submit</button>
             </form>
         </main>
